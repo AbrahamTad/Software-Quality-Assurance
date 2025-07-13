@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#EWF-4] Login button not functioning</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://abrahamt.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [EWF-4]&nbsp;<a href="https://abrahamt.atlassian.net/browse/EWF-4">Login button not functioning</a>
+            <span class="subText">
+               Created: 13/May/25                   &nbsp;Updated: 13/May/25
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://abrahamt.atlassian.net/secure/BrowseProject.jspa?id=10033">Evangadi Web Forum</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38"
+                id="word_reporter_712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38"
+                href="https://abrahamt.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ac9c77125-f8b2-4347-b5fe-222e7c13ed38">
+                    Abr Bel
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38"
+                id="word_assignee_712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38"
+                href="https://abrahamt.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ac9c77125-f8b2-4347-b5fe-222e7c13ed38">
+                    Abr Bel
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10047-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            login-UI                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10047-value" class="value" bgcolor="#ffffff" width="80%">      0|i0001r:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Team:</b></td>
+                <td id="customfield_10001-10047-value" class="value" bgcolor="#ffffff" width="80%"><div class="shorten" id="customfield_10001-field">
+    <span></span>
+</div>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10047-value" class="value" bgcolor="#ffffff" width="80%">Sprint 1</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>When users click the login button on the homepage, no action occurs. The button appears but doesn't trigger the login process.</p>
+
+<p><b>Steps to Reproduce:</b></p>
+
+<ol>
+	<li>Navigate to login page.</li>
+	<li>Enter valid username and password.</li>
+	<li>Click the "Login" button.<br/>
+Expected Result: User should be logged in and redirected to their profile.<br/>
+Actual Result: Nothing happens when clicking the login button.</li>
+</ol>
+
+
+<p>Environment:</p>
+
+<ul>
+	<li>Browser: Chrome 122.0</li>
+	<li>OS: Windows 10</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+Generated at Tue May 13 13:01:42 UTC 2025 by Abr Bel using Jira 1001.0.0-SNAPSHOT#100283-rev:b6413e4fb61dd9f48d370b00ce57887a2bc5734c.
+
+</body>
+</html>
