@@ -10,3 +10,11 @@ cypress/downloads/
 .DS_Store
 .env
 *.log
+
+# Postman local files
+postman/workspace.json
+postman/local-data/
+
+# Environment variables
+*.env
+

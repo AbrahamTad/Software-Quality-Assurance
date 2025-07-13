@@ -1,4 +1,4 @@
-# Week 6: Advanced Automation - Part 1
+# ⚙️ Advanced Automation - Part 1
 
 In this project, you'll explore:
 

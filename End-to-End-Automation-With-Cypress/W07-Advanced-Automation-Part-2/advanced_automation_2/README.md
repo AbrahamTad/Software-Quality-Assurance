@@ -1,4 +1,4 @@
-# Week 7: Advanced Automation - Part 2
+# Advanced Automation - Part 2
 
 Advanced UI interaction automation including:
 

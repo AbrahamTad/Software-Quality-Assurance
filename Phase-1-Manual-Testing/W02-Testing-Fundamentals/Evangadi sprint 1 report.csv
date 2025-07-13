@@ -1,0 +1,4 @@
+Issue Type,Issue key,Issue id,Summary,Assignee,Assignee Id,Reporter,Reporter Id,Priority,Status,Resolution,Created,Updated,Due date
+Bug,EWF-4,10047,Login button not functioning,Abr Bel,712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38,Abr Bel,712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38,Medium,To Do,,13/May/25 11:21 AM,13/May/25 11:21 AM,
+Task,EWF-2,10043,Implement login functionality,Abr Bel,712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38,Abr Bel,712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38,Medium,In Progress,,13/May/25 11:12 AM,14/May/25 11:30 AM,
+Task,EWF-1,10041,Design the registration page,,,Abr Bel,712020:c9c77125-f8b2-4347-b5fe-222e7c13ed38,Medium,In Progress,,13/May/25 11:12 AM,13/May/25 5:24 PM,

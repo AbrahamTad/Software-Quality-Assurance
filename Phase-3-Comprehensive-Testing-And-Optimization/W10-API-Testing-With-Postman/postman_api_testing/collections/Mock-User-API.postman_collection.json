@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "a3c3efc7-9c10-4dd1-86a2-2daf0487c959",
+		"name": "Mock User API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38850142"
+	},
+	"item": [
+		{
+			"name": "users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer abc123",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "reqres-free-v1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"page\": 1,\n    \"per_page\": 3,\n    \"total\": 3,\n    \"data\": [\n      { \"id\": 1, \"name\": \"Abebe\", \"email\": \"abebe@example.com\" },\n      { \"id\": 2, \"name\": \"Mola\", \"email\": \"mola@example.com\" },\n      { \"id\": 3, \"name\": \"Hana\", \"email\": \"hana@example.com\" }\n    ]\n  }\n"
+				}
+			]
+		},
+		{
+			"name": "users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n  \"name\": \"Abeba\",\n  \"job\": \"Developer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "{{url}}/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Check if status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Check if response time is under 500ms\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"\r",
+							"// Check Content-Type is application/json\r",
+							"pm.test(\"Content-Type is application/json\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\", /application\\/json/);\r",
+							"});\r",
+							"\r",
+							"// Check if 'users' field is an array\r",
+							"pm.test(\"'users' is an array\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.users).to.be.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"// Check if total is 2\r",
+							"pm.test(\"Total users is 2\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.total).to.eql(2);\r",
+							"});\r",
+							"\r",
+							"// Check if the first user has name and id\r",
+							"pm.test(\"First user has 'id' and 'name'\", function () {\r",
+							"    const user = pm.response.json().users[0];\r",
+							"    pm.expect(user).to.have.property(\"id\");\r",
+							"    pm.expect(user).to.have.property(\"name\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\": 1,\r\n    \"per_page\": 3,\r\n    \"total\": 3,\r\n    \"data\": [\r\n      { \"id\": 1, \"name\": \"Abebe\", \"email\": \"abebe@example.com\" },\r\n      { \"id\": 2, \"name\": \"Mola\", \"email\": \"mola@example.com\" },\r\n      { \"id\": 3, \"name\": \"Hana\", \"email\": \"hana@example.com\" }\r\n    ]\r\n  }\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://bfc73d7e-4b8e-4e38-8714-9f7ccea899ea.mock.pstmn.io"
+		}
+	]
+}
