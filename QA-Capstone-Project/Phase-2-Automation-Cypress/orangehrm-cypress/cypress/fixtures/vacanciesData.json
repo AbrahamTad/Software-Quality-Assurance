@@ -1,0 +1,14 @@
+[
+  {
+    "jobTitle": "Software Engineer",
+    "vacancyName": "Junior QA",
+    "hiringManager": "John Smith",
+    "valid": true
+  },
+  {
+    "jobTitle": "",
+    "vacancyName": "",
+    "hiringManager": "",
+    "valid": false
+  }
+]

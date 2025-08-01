@@ -1,0 +1,15 @@
+[
+  { "username": "admin1", "password": "pass123" },
+  { "username": "admin2", "password": "pass123" },
+  { "username": "user01", "password": "test123" },
+  { "username": "wronguser1", "password": "wrongpass" },
+  { "username": "admin2", "password": "wrongpass" },
+  { "username": "manager", "password": "mng123wrongpass" },
+  { "username": "user02", "password": "test123" },
+  { "username": "qaengineer", "password": "qa123" },
+  { "username": "developer", "password": "devpass" },
+  { "username": "manager", "password": "mng123" },
+  { "username": "hrstaff", "password": "hr2024" },
+  { "username": "intern", "password": "intpass" },
+  { "username": "tester", "password": "testme" }
+]

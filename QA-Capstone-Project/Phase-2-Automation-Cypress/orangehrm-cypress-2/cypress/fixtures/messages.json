@@ -1,0 +1,7 @@
+{
+  "general.required": "Required",
+  "invalid.credentials": "Invalid credentials",
+  "auth.login": "Login",
+  "auth.username": "Username",
+  "auth.password": "Password"
+}

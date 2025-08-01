@@ -18,3 +18,4 @@ postman/local-data/
 # Environment variables
 *.env
 
+*.xlsx

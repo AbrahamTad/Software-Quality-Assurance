@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-27T22:47:13.154Z",
+    "end": "2025-07-27T22:47:34.714Z",
+    "duration": 21560,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a33bd709-dfee-41bd-8a8b-c2b53200bd23",
+      "title": "",
+      "fullFile": "cypress\\e2e\\candidates.cy.js",
+      "file": "cypress\\e2e\\candidates.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0a85cb28-932b-40d0-ba61-bbb4623c3389",
+          "title": "Recruitment - Candidates Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Data-Driven Candidate Creation",
+              "fullTitle": "Recruitment - Candidates Tests Data-Driven Candidate Creation",
+              "timedOut": null,
+              "duration": 5186,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "this.candidates.forEach(candidate => {\n  cy.visit(\"/web/index.php/recruitment/viewCandidates\");\n  _CandidatesPage.default.addCandidate(candidate.firstName, candidate.lastName, candidate.email);\n  if (candidate.valid) {\n    _CandidatesPage.default.elements.successToast().should(\"exist\");\n  } else {\n    cy.get(\".oxd-input-group__message\").should(\"exist\"); // Field validation error\n  }\n});",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'forEach')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'forEach')\n    at Context.eval (webpack://orangehrm-cypress/./cypress/e2e/candidates.cy.js:17:20)\n    at runnable.fn (http://localhost/__cypress/runner/cypress_runner.js:141799:19)\n    at callFn (http://localhost/__cypress/runner/cypress_runner.js:160877:21)\n    at Runnable.run (http://localhost/__cypress/runner/cypress_runner.js:160864:7)\n    at <unknown> (http://localhost/__cypress/runner/cypress_runner.js:166957:30)\n    at PassThroughHandlerContext.finallyHandler (http://localhost/__cypress/runner/cypress_runner.js:4042:23)\n    at PassThroughHandlerContext.tryCatcher (http://localhost/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://localhost/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://localhost/__cypress/runner/cypress_runner.js:1546:18)",
+                "diff": null
+              },
+              "uuid": "c1602651-0a2c-48ca-8703-41bb674f7ba6",
+              "parentUUID": "0a85cb28-932b-40d0-ba61-bbb4623c3389",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c1602651-0a2c-48ca-8703-41bb674f7ba6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5186,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

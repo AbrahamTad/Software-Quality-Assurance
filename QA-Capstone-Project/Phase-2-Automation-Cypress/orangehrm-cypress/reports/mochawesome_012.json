@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-27T22:51:36.503Z",
+    "end": "2025-07-27T22:52:02.723Z",
+    "duration": 26220,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fb66589a-5ed2-4094-b143-a06896ca59ba",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vacancies.cy.js",
+      "file": "cypress\\e2e\\vacancies.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9816919-4989-436e-bc8e-19ae2745ca7b",
+          "title": "Recruitment - Vacancies Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Data-Driven Vacancy Creation",
+              "fullTitle": "Recruitment - Vacancies Tests Data-Driven Vacancy Creation",
+              "timedOut": null,
+              "duration": 8438,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"vacanciesData\").then(vacancies => {\n  vacancies.forEach(vacancy => {\n    cy.visit(\"/web/index.php/auth/login\");\n    cy.get('[name=\"username\"]').type(\"Admin\");\n    cy.get('[name=\"password\"]').type(\"admin123\");\n    cy.get('[type=\"submit\"]').click();\n    cy.visit(\"/web/index.php/recruitment/viewJobVacancy\");\n    _VacanciesPage.default.addVacancy(vacancy.jobTitle, vacancy.vacancyName, vacancy.hiringManager);\n    if (vacancy.valid) {\n      _VacanciesPage.default.elements.successToast().should(\"exist\");\n    } else {\n      cy.get(\".oxd-input-group__message\").should(\"exist\");\n    }\n  });\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Add' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Add' but never did.\n    at Object.addButton (webpack://orangehrm-cypress/./cypress/pageObjects/VacanciesPage.js:3:24)\n    at VacanciesPage.addVacancy (webpack://orangehrm-cypress/./cypress/pageObjects/VacanciesPage.js:12:18)\n    at eval (webpack://orangehrm-cypress/./cypress/e2e/vacancies.cy.js:13:22)\nat Array.forEach (<anonymous>)\n    at Context.eval (webpack://orangehrm-cypress/./cypress/e2e/vacancies.cy.js:6:16)\n    at getRet (http://localhost/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://localhost/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://localhost/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://localhost/__cypress/runner/cypress_runner.js:120960:66)",
+                "diff": null
+              },
+              "uuid": "394c6487-d214-4655-a5b5-f3fcb251a344",
+              "parentUUID": "b9816919-4989-436e-bc8e-19ae2745ca7b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "394c6487-d214-4655-a5b5-f3fcb251a344"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8438,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

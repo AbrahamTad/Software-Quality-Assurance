@@ -1,0 +1,31 @@
+﻿[
+  {
+    "testCase": "Valid Login",
+    "username": "Admin",
+    "password": "admin123",
+    "expectedUrl": "/web/index.php/dashboard/index",
+    "expectedMessage": null
+  },
+  {
+    "testCase": "Invalid Password",
+    "username": "Admin",
+    "password": "wrongpassword",
+    "expectedUrl": "/web/index.php/auth/login",
+    "expectedMessage": "Invalid credentials"
+  },
+  {
+    "testCase": "Empty Username",
+    "username": "",
+    "password": "admin123",
+    "expectedUrl": "/web/index.php/auth/login",
+    "expectedMessage": "Required"
+  },
+  {
+    "skipped": [
+      { "username": "Abraham", "password": "\"!Password1!", "type": "valid" },
+      { "username": "wrong", "password": "admin123", "type": "invalid" },
+      { "username": "", "password": "admin123", "type": "empty-username" },
+      { "username": "Admin", "password": "", "type": "empty-password" }
+    ]
+  }
+]
